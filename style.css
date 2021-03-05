@@ -1,0 +1,57 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
+  grid-template-rows: 3.5fr 1.5fr 5fr 3fr 1fr 2fr 2fr 1fr 3fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header Header Header Header"
+    "Button Button Button Button Button"
+    ". Slideshow Slideshow Slideshow ."
+    ". quotes quotes quotes ."
+    ". . . . ."
+    ". Location- Location- Location- ."
+    ". Time Time Time ."
+    ". . . . ."
+    ". Order-Now-button Order-Now-button Order-Now-button ."
+    ". . . . ."
+    ". . . . .";
+}
+
+.Header { 
+  grid-area: Header; 
+  background-color: red;
+  }
+h1{
+  font-family: 'Poppins', sans-serif;
+   text-align: center;
+}
+.Button { 
+  grid-area: Button; 
+  background-color: green;
+
+}
+
+.Slideshow { 
+  grid-area: Slideshow;
+  background-color: blue;
+   }
+
+.quotes { 
+  grid-area: quotes; 
+  background-color: purple; 
+}
+
+.Location- { 
+  grid-area: Location-; 
+  background-color: lightskyblue;
+  }
+
+.Time { 
+  grid-area: Time; 
+  background-color: lightpink;
+  }
+
+.Order-Now-button {
+   grid-area: Order-Now-button; 
+   background-color: lightsalmon;
+   }
